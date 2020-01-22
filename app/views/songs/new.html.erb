@@ -13,17 +13,11 @@
   <%= f.collection_select :genre_id, Genre.all, :id, :name %>
   <br />
 
-  <%= f.fields_for :notes_attributes do |ff| %>
+  <%= f.fields_for :notes do |ff| %>
     <%= ff.label :content %>
     <%= ff.text_field  :content %>
     <br />
 
-    <%= ff.label :content %>
-    <%= ff.text_field  :content %>
-    <br />
-
-    <%= ff.label :content %>
-    <%= ff.text_field  :content %>
     <% end %>
     <br />
 
